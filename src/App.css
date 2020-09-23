@@ -1,41 +1,4 @@
-/* .App {
-  text-align: center;
-}
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-} */
 
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap');
 
@@ -47,6 +10,8 @@
 
 body{
   font-family: "DM Sans";
+  background-color: black;
+  color: white;
 }
 
 header{
@@ -54,6 +19,7 @@ header{
   display: flex;
   justify-content: space-evenly;
   align-items: center;
+  background-color: white;
 }
 
 
@@ -64,10 +30,80 @@ header{
 }
 
 .inv{
-  padding: 0 10px;
+  padding: 10px 15px;
   background-color: black;
   color: white;
   text-decoration: none;
   border: 1px solid grey;
 
+}
+
+
+footer{
+  background-color: black;
+  color: white;
+  display: flex;
+  justify-content: space-evenly;
+  min-height: 250px;
+  margin: 20% 0 0 0;
+}
+
+footer a{
+  color: white;
+  text-decoration: none;
+}
+
+.footerDiv1{
+  height: 122px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.socialsDiv a{
+  margin: 0 5px;
+}
+
+.socialsDiv a:hover{
+  transform: scale(1.5);
+}
+
+.footerDiv2{
+  height: 122px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.footerDiv3{
+  height: 122px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+@media (max-width: 768px) {
+  footer{
+    flex-direction: column;
+    justify-content: unset;
+  }
+
+  .footerDiv1{
+    align-items: center;
+  }
+
+  .footerDiv2{
+    align-items: center;
+    margin: 5% 0;
+  }
+
+  .footerDiv3{
+    align-items: center;
+  }
+}
+
+@media (max-width: 425px) {
+  .nav-links{
+    margin: unset;
+  }
 }

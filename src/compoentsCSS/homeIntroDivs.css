@@ -1,9 +1,13 @@
 /* 610 + 830
 650 */
 
+body{
+    border: 1px solid white;
+}
+
 .one{
     width: 1440px;
-    height: 650px;
+    height: 600px;
     max-width: 100%;
     display: flex;
     flex-direction: row-reverse;
@@ -15,7 +19,7 @@
 .two{
     max-width: 100%;
     width: 1440px;
-    height: 650px;
+    height: 600px;
     display: flex;
     align-items: center;
     background-color: black;
@@ -25,11 +29,13 @@
 
 .introImg{
     width: 830px;
+    max-width: 57.6%;
     height: 600px;
 }
 
 .introTextDiv{
     width: 387px;
+    max-width: 46.6%;
     height: 304px;
     display: flex;
     flex-direction: column;
@@ -47,6 +53,35 @@
     padding: 0 10px;
     border: 1px solid;
     width: 193.5px;
+    max-width: 50%;
 }
 
 
+@media (max-width: 768px) {
+    .introImg{
+        max-width: 50%;
+    }
+
+    .introTextDiv{
+        margin: unset;
+    }
+  }
+
+@media (max-width: 425px) {
+    .one, .two{
+        flex-direction: column;
+        margin: 0 0 10% 0;
+    }
+
+    .introImg{
+        max-width: 100%;
+    }
+
+    .introTextDiv{
+        max-width: 100%;
+    }
+
+    .introTextDiv h1{
+        margin: 5% 0 0 0;
+    }
+  }

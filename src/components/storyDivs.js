@@ -1,22 +1,22 @@
 import React from 'react'
+import { BrowserRouter, Route, Link, Switch } from "react-router-dom";
 import "../compoentsCSS/storyDivs.css"
+import Arrow from "./arrow"
+
 
 function StoryDivs(props) {
     return (
-        <div className="storyDivsContainer" style={{backgroundImage: props.img}} >
+        <Link to={"/"} className="storyDivsContainer" style={{backgroundImage: props.img}} >
         <div className="storyInfoDiv">
         <p>{props.p1}</p>
         <h4>{props.h4}</h4>
         <p>{props.p2}</p>
 
-        <div className="readStory">
 
-        <h5>READ STORY</h5>
-        <button>---]</button>
-        </div>
+        <Arrow jc={"space-between"} border="solid"/>
             
         </div>
-        </div>
+        </Link>
     )
 }
 

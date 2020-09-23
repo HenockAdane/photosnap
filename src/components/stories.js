@@ -1,5 +1,6 @@
 import React from 'react'
 import StoryDivs from './storyDivs'
+import FeaturedStory from "./featuredStory"
 import "../compoentsCSS/stories.css"
 
 
@@ -8,6 +9,12 @@ function Stories() {
 
     const [state, setState] = React.useState(()=> (
         {stories:[{
+            img: "url(/images/stories/desktop/moon-of-appalacia.jpg)",
+            date: "March 2nd 2020",
+            title: "HAZY FULL MOON OF APPALACHIA",
+            description: 'The dissected plateau area, while not actually made up of geological mountains, is popularly called "mountains," especially in eastern Kentucky and West Virginia, and hile the ridges are not high, the terrain is extremely rugged.',
+            author: "by John Appleseed"
+        },{
             img: "url(/images/stories/desktop/mountains.jpg)",
             date: "April 16th 2020",
             title: "The Mountains",
@@ -107,8 +114,15 @@ function Stories() {
 
         ]}))
 
-        let divs = state.stories.map((a)=>{
-            return <StoryDivs p1={a.date} h4={a.title} p2={a.author} img= {a.img}/> 
+        let divs = state.stories.map((a, i)=>{
+
+            if(i !== 0){
+                return <StoryDivs p1={a.date} h4={a.title} p2={a.author} img= {a.img}/> 
+            }
+
+            else{
+                return <FeaturedStory img={a.img} h1={a.title} date={a.date} author={a.author} description={a.description} />
+            }
         })
     return (
         <div className="storiesContainer">

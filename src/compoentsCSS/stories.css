@@ -5,3 +5,13 @@
     display: grid;
     grid-template-columns: repeat(4, 1fr);
 }
+
+.featuredStory{
+    grid-column: 1/-1;
+}
+
+@media (max-width: 768px) {
+    .storiesContainer {
+        grid-template-columns: repeat(2,50%);    
+    }
+  }

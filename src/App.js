@@ -5,6 +5,8 @@ import One from "./one"
 import { BrowserRouter, Route, Link, Switch } from "react-router-dom";
 import Home from "./components/home"
 import Stories from "./components/stories"
+import Arrow from "./components/arrow"
+
 // function App() {
 
 //   const [state, setState] = React.useState(()=> (
@@ -62,6 +64,10 @@ function App() {
       <Link className="inv" to={"/"}>GET AN INVITE</Link>
 
     </header>
+
+
+
+
     <Switch>
           <Route exact={true} path="/" render={()=>(
             <Home />
@@ -69,7 +75,41 @@ function App() {
           <Route exact={true} path="/stories" render={() =>(
             <Stories/>)}/>
  
-        </Switch>
+    </Switch>
+
+    
+
+    <footer>
+
+      <div className="footerDiv1">
+        <Link className="logo" to={"/"}>
+          <h4>PHOTOSNAP</h4>
+        </Link>
+
+      <div className="socialsDiv">
+            <a href="#"><img src="/images/shared/desktop/facebook.svg" /></a>
+            <a href="#"><img src="/images/shared/desktop/instagram.svg" /></a>
+            <a href="#"><img src="/images/shared/desktop/twitter.svg" /></a>
+            <a href="#"><img src="/images/shared/desktop/pinterest.svg" /></a>
+            <a href="#"><img src="/images/shared/desktop/youtube.svg" /></a>
+            </div>
+
+      </div>
+
+      <div className="footerDiv2">
+          <Link to={"/"}>HOME</Link>
+          <Link to={"/stories"}>STORIES</Link>
+          <Link to={"/features"}>FEATURES</Link>
+          <Link to={"/pricing"}>PRICING</Link>
+      </div>
+
+      <div className="footerDiv3">
+        <Arrow jc="flex-end" />
+        <p>Copyright 2019. All Rights Reserved</p>
+
+      </div>
+
+    </footer>
 
 
     

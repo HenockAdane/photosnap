@@ -4,12 +4,14 @@
     align-items: flex-end;
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center;
     color: white;
     transition:  all 0.5s ease-in;
+    text-decoration: none;
 }
 
 .storyDivsContainer:hover{
-    margin: 0 0 10% 0;
+    margin:  -10% 0 0 0;
 }
 
 .storyInfoDiv{
@@ -26,8 +28,8 @@
     font-size: 18px;
 }
 
-.readStory{
-    display: flex;
-    justify-content: space-between;
-    margin: 10% 0 0 0;
-}
+@media (max-width: 768px) {
+    .storyDivsContainer:hover {
+        margin: unset;   
+    }
+  }
