@@ -1,0 +1,33 @@
+.storyDivsContainer{
+    height: 500px;
+    display: flex;
+    align-items: flex-end;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+    transition:  all 0.5s ease-in;
+}
+
+.storyDivsContainer:hover{
+    margin: 0 0 10% 0;
+}
+
+.storyInfoDiv{
+    width: 280px;
+    margin: 0 0 0 12%;
+}
+
+.storyInfoDiv p{
+    font-size: 13px;
+}
+
+.storyInfoDiv h4{
+    margin: 5% 0;
+    font-size: 18px;
+}
+
+.readStory{
+    display: flex;
+    justify-content: space-between;
+    margin: 10% 0 0 0;
+}

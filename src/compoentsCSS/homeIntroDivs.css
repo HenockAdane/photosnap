@@ -1,0 +1,52 @@
+/* 610 + 830
+650 */
+
+.one{
+    width: 1440px;
+    height: 650px;
+    max-width: 100%;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    background-color: black;
+    color: white;
+}
+
+.two{
+    max-width: 100%;
+    width: 1440px;
+    height: 650px;
+    display: flex;
+    align-items: center;
+    background-color: black;
+    color: white;
+}
+
+
+.introImg{
+    width: 830px;
+    height: 600px;
+}
+
+.introTextDiv{
+    width: 387px;
+    height: 304px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+.introTextDiv p{
+    margin: 5% 0;
+}
+
+.introTextDiv a{
+    color: white;
+    text-decoration: none;
+    padding: 0 10px;
+    border: 1px solid;
+    width: 193.5px;
+}
+
+
