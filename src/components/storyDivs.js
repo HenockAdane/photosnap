@@ -13,7 +13,7 @@ function StoryDivs(props) {
         <p>{props.p2}</p>
 
 
-        <Arrow jc={"space-between"} border="solid"/>
+        <Arrow jc={"space-between"} border="solid" h4="READ THE STORY"/>
             
         </div>
         </Link>

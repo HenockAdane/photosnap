@@ -10,8 +10,8 @@
 
 body{
   font-family: "DM Sans";
-  background-color: black;
-  color: white;
+  /* background-color: black;
+  color: white; */
 }
 
 header{
@@ -44,8 +44,10 @@ footer{
   color: white;
   display: flex;
   justify-content: space-evenly;
-  min-height: 250px;
-  margin: 20% 0 0 0;
+  align-items: center;
+  min-height: 350px;
+  /* margin: 20% 0 0 0; */
+  padding: 5% 0 0 0;
 }
 
 footer a{

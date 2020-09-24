@@ -12,7 +12,7 @@ function Home() {
             h1: "CREATE AND SHARE YOUR PHOTO STORIES",
             p: "Photosnap is a platform for photographers and visual storytellers, We make it easy to share photos, tell stories and connect with others",
             to: "/",
-            Ltext: "GET AN INVITE"
+            arrowText: "GET AN INVITE"
           },
           {
               class: "two",
@@ -20,7 +20,7 @@ function Home() {
               h1: "BEAUTIFUL STORIES EVERY TIME",
               p: "We provide design templates to ensure your stories look terrific. Easily add photos, text, embed maps and media from other networks. Then share your story with everyone",
               to: "/",
-              Ltext: "VIEW THE STORIES"
+              arrowText: "VIEW THE STORIES"
           },
           {
               class:"one",
@@ -28,7 +28,7 @@ function Home() {
               h1:"DESIGNED FOR EVERYONE",
               p: "Photosnap can help you create stories that resonate with your audience. Our tool is designed for photographers of all levels, brands, businesses, you name it.",
               to: "/",
-              Ltext: "VIEW THE STORIES"
+              arrowText: "VIEW THE STORIES"
           }
         ]
         }))
@@ -39,7 +39,7 @@ function Home() {
 
 
         let divs = state.homeIntro.map((a)=>{
-           return  <HomeIntroDivs class={a.class} img={a.img} h1={a.h1} p={a.p} to={a.to} Ltext= {a.Ltext} />
+           return  <HomeIntroDivs class={a.class} img={a.img} h1={a.h1} p={a.p} arrowTo={a.to} arrowText= {a.arrowText} />
 
         })
 

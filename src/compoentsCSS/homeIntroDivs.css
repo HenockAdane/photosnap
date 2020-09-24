@@ -47,14 +47,13 @@ body{
     margin: 5% 0;
 }
 
-.introTextDiv a{
+/* .introTextDiv a{
     color: white;
     text-decoration: none;
     padding: 0 10px;
-    border: 1px solid;
     width: 193.5px;
     max-width: 50%;
-}
+} */
 
 
 @media (max-width: 768px) {

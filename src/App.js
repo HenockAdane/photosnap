@@ -5,7 +5,9 @@ import One from "./one"
 import { BrowserRouter, Route, Link, Switch } from "react-router-dom";
 import Home from "./components/home"
 import Stories from "./components/stories"
+import Features from "./components/features"
 import Arrow from "./components/arrow"
+import Pricing from "./components/pricing"
 
 // function App() {
 
@@ -58,7 +60,6 @@ function App() {
           <Link className="nav-links" to={"/pricing"}>PRICING</Link>
         </ul>
 
-        {/* <Link className="inv" to={"/"}>GET AN INVITE</Link> */}
       </nav>
 
       <Link className="inv" to={"/"}>GET AN INVITE</Link>
@@ -72,9 +73,15 @@ function App() {
           <Route exact={true} path="/" render={()=>(
             <Home />
           )}  />
+
           <Route exact={true} path="/stories" render={() =>(
             <Stories/>)}/>
- 
+
+          <Route exact={true} path="/features" render={() =>(
+            <Features/>)}/> 
+
+          <Route exact={true} path="/pricing" render={() =>(
+            <Pricing/>)}/> 
     </Switch>
 
     
@@ -104,7 +111,7 @@ function App() {
       </div>
 
       <div className="footerDiv3">
-        <Arrow jc="flex-end" />
+        <Arrow jc="flex-end" h4="GET AN INVITE" />
         <p>Copyright 2019. All Rights Reserved</p>
 
       </div>

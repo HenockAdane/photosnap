@@ -1,0 +1,17 @@
+.toggleBtn{
+    width: 64px;
+    height: 32px;
+    background-color: black;
+    /* transition: all 0.4s ease-in; */
+    display: flex;
+    align-items: center;
+    border-radius:20px;
+}
+
+
+.btnsBall{
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    background-color: white;
+}
