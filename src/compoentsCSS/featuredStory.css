@@ -3,13 +3,13 @@
     min-height: 650px;
     background-size: cover;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
+    align-items: center;
     color: white;
 }
 
-.featuredStory div{
+.featuredStoryText{
     width: 387px;
+    min-height: 406px;
     margin: 0 0 0 7.7%;
 }
 

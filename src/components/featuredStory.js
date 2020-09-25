@@ -8,18 +8,19 @@ function FeaturedStory(props) {
     return (
         <div className="featuredStory" style={{backgroundImage: props.img}}>                
 
-            <div>
+            <div className="featuredStoryText">
                 <h3>LAST MONTH'S FEATURED STORY</h3>
                 <h1>{props.h1}</h1>
                 <span className="date">{props.date}</span> <span className>{props.author}</span>
                 <p>{props.description}</p>
+                <Arrow h4="READ THE STORY"/>
+
 
 
 
 
                 
             </div>
-            <Arrow h4="READ THE STORY"/>
 
 
             
