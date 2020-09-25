@@ -1,8 +1,11 @@
 import React from 'react'
 import HomeIntroDivs from "./homeIntroDivs"
+import FeatureDivs from "./featureDivs"
+import "../compoentsCSS/home.css"
+import StoryDivs from './storyDivs'
 
 
-function Home() {
+function Home(props) {
 
     const [state, setState] = React.useState(()=> (
         console.log(1),{
@@ -30,11 +33,13 @@ function Home() {
               to: "/",
               arrowText: "VIEW THE STORIES"
           }
-        ]
+        ],
+        storyDivs: props.storyDivs,
+        featureDivs: props.featureDivs
         }))
 
         React.useEffect(()=>{
-            console.log(state.homeIntro)
+            console.log(state.homeIntro, state.featureDivs)
         }, [])
 
 
@@ -43,10 +48,26 @@ function Home() {
 
         })
 
+        let stories = state.storyDivs.map((a) => {
+        return <StoryDivs p1={a.date} h4={a.title} p2={a.author} img= {a.img}/>
+        })
+        
+        let featureDivs = state.featureDivs.map((a)=>{
+            return <FeatureDivs  img={a.img} title={a.title} desc={a.desc}/>
+        })
+
 
     return (
         <div>
         {divs}
+
+        <div className="stories">
+            {stories}
+        </div>
+
+        <div className="featureContainer">
+        {featureDivs}
+        </div>
             
         </div>
     )

@@ -1,9 +1,7 @@
 /* 610 + 830
 650 */
 
-body{
-    border: 1px solid white;
-}
+
 
 .one{
     width: 1440px;
@@ -30,7 +28,6 @@ body{
 .introImg{
     width: 830px;
     max-width: 57.6%;
-    height: 600px;
 }
 
 .introTextDiv{
@@ -41,6 +38,7 @@ body{
     flex-direction: column;
     justify-content: center;
     margin: 0 auto;
+    padding: 5px;
 }
 
 .introTextDiv p{
@@ -74,6 +72,7 @@ body{
 
     .introImg{
         max-width: 100%;
+        height: unset;
     }
 
     .introTextDiv{

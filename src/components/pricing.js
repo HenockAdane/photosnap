@@ -4,6 +4,7 @@ import "../compoentsCSS/pricing.css"
 import PricingCards from './pricingCards'
 import FeatureCheck from './featureCompare'
 import FeatureComparePhone from './featureComparePhone'
+import Beta from './beta'
 
 function Pricing(props) {
 
@@ -83,7 +84,6 @@ function Pricing(props) {
     }))
 
 
-    let compare = []
 
     React.useEffect(()=>{
 
@@ -176,6 +176,7 @@ function Pricing(props) {
 
                 {state.vw < 425 ? state.compare.map((a)=> <FeatureComparePhone feature={a.feature} basic={a.basic} pro={a.pro} business={a.business} />) : state.compare.map((a)=> <FeatureCheck feature={a.feature} basic={a.basic} pro={a.pro} business={a.business} />) }
             </div>
+            <Beta />
         </div>
     )
 }

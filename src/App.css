@@ -16,7 +16,7 @@ body{
 
 header{
   top: 0;
-  position: fixed;
+  position: sticky;
   width: 100%;
   min-height: 10vh;
   display: flex;
@@ -25,14 +25,25 @@ header{
   background-color: white;
 }
 
+.logo{
+  color: black;
+  text-decoration: none;
+  font-size: 35px;
+}
 
 .nav-links{
   margin: 0 5px;
   text-decoration: none;
   color: black;
+  display: inline-blocky;
+}
+
+.nav-links:hover{
+  transform: scale(1.1);
 }
 
 .inv{
+  text-align: center;
   padding: 10px 15px;
   background-color: black;
   color: white;
@@ -51,6 +62,10 @@ footer{
   min-height: 350px;
   /* margin: 20% 0 0 0; */
   padding: 5% 0 0 0;
+}
+
+footer .logo{
+  color: white;
 }
 
 footer a{
@@ -89,13 +104,32 @@ footer a{
 
 @media (max-width: 768px) {
 
+  *:hover{
+    transform:unset;
+    margin: 0;
+    text-decoration: none;
+  }
+
   header{
     flex-direction: column;
+    justify-content: center;
+  }
+
+  .menuContainer{
+    width:90%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+  }
+
+  header nav{
+    width: 100%;
   }
 
   header nav ul{
+    transition: all 0.4s ease-in;
     width: 100%;
-    display: flex;
     flex-direction: column;
   }
 
@@ -103,6 +137,7 @@ footer a{
     width: 100%;
     margin: unset;
     padding: 10px;
+    text-align: center;
   }
 
   footer{
@@ -122,6 +157,70 @@ footer a{
   .footerDiv3{
     align-items: center;
   }
+
+  menu
+  {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items:center;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  transition: all .5s ease-in-out;
+  border: 1px solid;
+  z-index: 1;
+  }
+
+  .burger
+  {
+  width:20px;
+  height: 3px;
+  background: black;
+  transition: all .5s ease-in-out;
+  border-radius: 20px
+  }
+
+  .burger::before,
+  .burger::after
+  {
+  content: "";
+  position:absolute;
+  width:20px;
+  height: 3px;
+  background: black;
+  transition: all .5s ease-in-out;
+  border-radius: 20px
+  }
+
+
+  .burger::before
+  {
+  transform: translateY(-9px)
+  }
+
+  .burger::after
+  {
+  transform: translateY(9px)
+  }
+
+  .menu.open .burger
+  {
+  transform: translateX(-50px);
+  background: transparent;
+  box-shadow:none
+  }
+
+  .menu.open .burger::before
+  {
+  transform: rotate(45deg) translate(35px,-35px);
+  }
+
+  .menu.open .burger::after
+  {
+  transform: rotate(-45deg) translate(35px, 35px);
+  }
+
 }
 
 @media (max-width: 425px) {
@@ -129,3 +228,4 @@ footer a{
     margin: unset;
   }
 }
+

@@ -1,11 +1,12 @@
 .arrowContainer{
-    width: 280px;
+    width: 90%;
     padding: 10px 0;
     border-top-width: 1px;
     border-top-color: rgb(170, 170, 170);
     display: flex;
     align-items: center;
     transition:  all 0.4s ease-in;
+    cursor: pointer;
 }
 
 .arrowContainer:hover{
@@ -17,6 +18,11 @@
 }
 
 @media (max-width: 768px) {
+    
+    .arrowContainer:hover{
+        text-decoration: unset;
+    }
+
     .arrowContainer{
         width: 90%;
     }
