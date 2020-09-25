@@ -106,13 +106,7 @@ function Pricing(props) {
     }, [])
     
 
-        if(state.vw < 475){
-        return compare = state.compare.map((a)=> <FeatureComparePhone feature={a.feature} basic={a.basic} pro={a.pro} business={a.business} />)
-    }
 
-    else{
-        return compare = state.compare.map((a)=> <FeatureCheck feature={a.feature} basic={a.basic} pro={a.pro} business={a.business} />)
-    }
 
     // let justifyContent;
 
@@ -169,7 +163,7 @@ function Pricing(props) {
 
             <div className="introCompareContainer">
             <div className="compareIntroFeature">
-                <h5>THE FEATURE</h5>
+                <h5>THE FEATURES</h5>
             </div>
 
             <div className="compareIntroTypeContainer">
@@ -180,10 +174,18 @@ function Pricing(props) {
 
             </div>
 
-                {compare}
+                {state.vw < 425 ? state.compare.map((a)=> <FeatureComparePhone feature={a.feature} basic={a.basic} pro={a.pro} business={a.business} />) : state.compare.map((a)=> <FeatureCheck feature={a.feature} basic={a.basic} pro={a.pro} business={a.business} />) }
             </div>
         </div>
     )
 }
 
 export default Pricing
+
+// if(state.vw < 475){
+//     return compare = state.compare.map((a)=> <FeatureComparePhone feature={a.feature} basic={a.basic} pro={a.pro} business={a.business} />)
+// }
+
+// else{
+//     return compare = state.compare.map((a)=> <FeatureCheck feature={a.feature} basic={a.basic} pro={a.pro} business={a.business} />)
+// }
