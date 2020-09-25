@@ -50,6 +50,38 @@
     align-items: center;
 }
 
+.compareContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.introCompareContainer{
+    width: 645px;
+    max-width: 100%;
+    min-height: 16px;
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    border-bottom: solid 1px;
+}
+
+.compareIntroFeature{
+    width: 45%;
+}
+
+.compareIntroTypeContainer{
+    width: 55%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.compareIntroTypeContainer h5{
+    text-align: center;
+    width: 33%;
+}
+
 
 @media (max-width: 768px) {
     .cardsContainer{

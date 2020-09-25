@@ -1,0 +1,51 @@
+.featureCheckContainer{
+    width: 645px;
+    max-width: 100%;
+    min-height: 16px;
+    display: flex;
+    align-items: center;
+    border-bottom: solid 1px;
+}
+
+.featureName{
+    width: 45%;
+}
+
+.tickContainer{
+    width: 55%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.tick{
+    width: 33%;
+    height: 12px;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    
+}
+
+@media (max-width: 425px) {
+    .featureCheckContainer{
+        flex-direction: column;
+        justify-content: center;
+        align-items: unset;
+    }
+
+    .featureName{
+        width: 100%;
+        margin: 5px 0;
+    }
+
+    .tickContainer{
+        width: 100%;
+        color: gray;
+    }
+
+    .tick{
+        margin: 5px 0;
+        width: 100%;
+    }
+}

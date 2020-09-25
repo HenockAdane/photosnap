@@ -49,10 +49,14 @@ function App() {
   return (
     <div className="App">
     <header>
+    <div className="menuContainer">
+          <Link className="logo" to={"/"}>
+            <h4>PHOTOSNAP</h4>
+          </Link>
 
-      <Link className="logo" to={"/"}>
-        <h4>PHOTOSNAP</h4>
-      </Link>
+          
+    </div>
+
       <nav>
         <ul>
           <Link className="nav-links" to={"/stories"}>STORIES</Link>

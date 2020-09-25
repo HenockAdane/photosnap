@@ -2,6 +2,8 @@ import React from 'react'
 import Hero from "./hero"
 import "../compoentsCSS/pricing.css"
 import PricingCards from './pricingCards'
+import FeatureCheck from './featureCompare'
+import FeatureComparePhone from './featureComparePhone'
 
 function Pricing(props) {
 
@@ -27,9 +29,90 @@ function Pricing(props) {
             desc: "Additional features available such as more detailed metrics. Recommended for business owners.",
             amount: 99.00,
             time: "month"
-        }]}))
+        }],
+        compare: [
+            {
+                feature: "UNLIMITED STORY POSTING",
+                basic: "url(/images/pricing/desktop/check.svg)",
+                pro: "url(/images/pricing/desktop/check.svg)",
+                business: "url(/images/pricing/desktop/check.svg)"
+            },
+            {
+                feature: "UNLIMITED PHOTO UPLOAD",
+                basic: "url(/images/pricing/desktop/check.svg)",
+                pro: "url(/images/pricing/desktop/check.svg)",
+                business: "url(/images/pricing/desktop/check.svg)"
+            },
+            {
+                feature:"EMBEDDING CUSTOM CONTENT" ,
+                basic: "unset",
+                pro: "url(/images/pricing/desktop/check.svg)",
+                business: "url(/images/pricing/desktop/check.svg)"
+            },
+            {
+                feature: "CUSTOMIZE METADATA",
+                basic: "unset",
+                pro: "url(/images/pricing/desktop/check.svg)",
+                business: "url(/images/pricing/desktop/check.svg)"
+            },
+            {
+                feature: "ADVANCED METRICS",
+                basic: "unset",
+                pro: "unset",
+                business: "url(/images/pricing/desktop/check.svg)"
+            },
+            {
+                feature: "PHOTO DOWNLOADS",
+                basic: "unset",
+                pro: "unset",
+                business: "url(/images/pricing/desktop/check.svg)"
+            },
+            {
+                feature: "SEARCH ENGINE INDEXING",
+                basic: "unset",
+                pro: "unset",
+                business: "url(/images/pricing/desktop/check.svg)"
+            },
+            {
+                feature: "CUSTOM ANALYTICS",
+                basic: "unset",
+                pro: "unset",
+                business: "url(/images/pricing/desktop/check.svg)"
+            }            
+        ], vw: window.innerWidth
+    }))
 
-    React.useEffect(()=>console.log("123"), [])
+
+    let compare = []
+
+    React.useEffect(()=>{
+
+        console.log("123")
+
+        // window.addEventListener("resize", (e)=>{
+        //     if (window.innerWidth > 768){
+        //       console.log(window.innerWidth)
+        // }
+
+        window.addEventListener("resize", (e)=>{
+            setState(ps => ({...ps, vw: window.innerWidth}))
+
+                console.log(window.innerWidth)
+
+
+            
+        })
+
+    }, [])
+    
+
+        if(state.vw < 475){
+        return compare = state.compare.map((a)=> <FeatureComparePhone feature={a.feature} basic={a.basic} pro={a.pro} business={a.business} />)
+    }
+
+    else{
+        return compare = state.compare.map((a)=> <FeatureCheck feature={a.feature} basic={a.basic} pro={a.pro} business={a.business} />)
+    }
 
     // let justifyContent;
 
@@ -62,6 +145,8 @@ function Pricing(props) {
         return <PricingCards class={a.class} type={a.type} desc={a.desc} amount={a.amount} time={a.time} />
     })
 
+
+
     return (
         <div>
             <Hero img="/images/pricing/desktop/hero.jpg" h1="PRICING" p="Create a your stories, Photosnap is a platform for photographers and visual storytellers. It’s the simple way to create and share your photos." />
@@ -77,6 +162,25 @@ function Pricing(props) {
             <div className="cardsContainer">
                 {cards}
             </div>
+            </div>
+
+            <div className="compareContainer">
+            <h1>COMPARE</h1>
+
+            <div className="introCompareContainer">
+            <div className="compareIntroFeature">
+                <h5>THE FEATURE</h5>
+            </div>
+
+            <div className="compareIntroTypeContainer">
+                <h5>BASIC</h5>
+                <h5>PRO</h5>
+                <h5>BUSINESS</h5>
+            </div>
+
+            </div>
+
+                {compare}
             </div>
         </div>
     )
