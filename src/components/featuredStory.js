@@ -6,7 +6,7 @@ import Arrow from "./arrow"
 
 function FeaturedStory(props) {
     return (
-        <div className="featuredStory" style={{backgroundImage: props.img}}>                <Arrow />
+        <div className="featuredStory" style={{backgroundImage: props.img}}>                
 
             <div>
                 <h3>LAST MONTH'S FEATURED STORY</h3>
@@ -16,8 +16,11 @@ function FeaturedStory(props) {
 
 
 
+
                 
             </div>
+            <Arrow h4="READ THE STORY"/>
+
 
             
         </div>
