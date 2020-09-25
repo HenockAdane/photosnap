@@ -1,0 +1,46 @@
+.priceCard{
+    width: 350px;
+    max-width: 31.5%;
+    height: 407px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    text-align: center;
+    background-color: #979797;
+    transition: all 1s ease-in;
+    padding: 3px;
+}
+
+
+.big{
+    height: 470px;
+    background-color: black;
+    color: white;
+}
+
+.priceCard button{
+    width: 90%;
+    padding: 11px;
+    background-color: black;
+    color: white;
+    cursor: pointer;
+}
+
+.big button{
+    background-color: white;
+    color: black;
+}
+
+@media (max-width: 768px) {
+    .priceCard{
+        max-width: unset;
+        margin: 5% 0;
+    }
+  }
+
+@media (max-width: 425px) {
+    .priceCard{
+        max-width: 100%;
+    }
+}

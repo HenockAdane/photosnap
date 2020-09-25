@@ -15,3 +15,9 @@
         grid-template-columns: repeat(2,50%);    
     }
   }
+
+@media (max-width: 425px) {
+    .storiesContainer {
+        grid-template-columns: 100%;    
+    }
+}

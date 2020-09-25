@@ -15,3 +15,48 @@
     border-radius: 50%;
     background-color: white;
 }
+
+
+.priceContainer{
+    width: 1110px;
+    max-width: 100%;
+    min-height: 550px;
+    margin: 10% auto;
+}
+
+.btnContainer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btnContainer span{
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.toggleBtn{
+    margin: 0 7px;
+}
+
+.toggleBtn:focus{
+    outline-style: none;
+}
+
+.cardsContainer{
+    margin: 2% 0;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+
+@media (max-width: 768px) {
+    .cardsContainer{
+        flex-direction: column;
+    }
+  }
+
+
+
+
