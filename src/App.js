@@ -62,7 +62,7 @@ function App() {
 
       </nav>
 
-      <Link className="inv" to={"/"}>GET AN INVITE</Link>
+      {/* <Link className="inv" to={"/"}>GET AN INVITE</Link> */}
 
     </header>
 
