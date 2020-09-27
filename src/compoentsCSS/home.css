@@ -1,7 +1,6 @@
 .featureContainer{
     width: 1110px;
     max-width: 100%;
-    min-height: 578px;
     display: flex;
     flex-wrap: wrap;
     margin: 0 auto;

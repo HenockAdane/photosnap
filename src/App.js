@@ -76,7 +76,7 @@ function App() {
   stories:[{
     img: "url(/images/stories/desktop/moon-of-appalacia.jpg)",
     date: "March 2nd 2020",
-    title: "HAZY FULL MOON OF APPALACHIA",
+    title: "Hazy Full Moon Of Appalachia",
     description: 'The dissected plateau area, while not actually made up of geological mountains, is popularly called "mountains," especially in eastern Kentucky and West Virginia, and hile the ridges are not high, the terrain is extremely rugged.',
     author: "by John Appleseed"
 },{
@@ -275,24 +275,25 @@ function App() {
         <Link className="logo" to={"/"}>PHOTOSNAP</Link>
 
       <div className="socialsDiv">
-            <a href="#"><img src="/images/shared/desktop/facebook.svg" /></a>
-            <a href="#"><img src="/images/shared/desktop/instagram.svg" /></a>
-            <a href="#"><img src="/images/shared/desktop/twitter.svg" /></a>
-            <a href="#"><img src="/images/shared/desktop/pinterest.svg" /></a>
-            <a href="#"><img src="/images/shared/desktop/youtube.svg" /></a>
+            <a className="footer-links" href="#"><img src="/images/shared/desktop/facebook.svg" /></a>
+            <a className="footer-links" href="#"><img src="/images/shared/desktop/instagram.svg" /></a>
+            <a className="footer-links" href="#"><img src="/images/shared/desktop/twitter.svg" /></a>
+            <a className="footer-links" href="#"><img src="/images/shared/desktop/pinterest.svg" /></a>
+            <a className="footer-links" href="#"><img src="/images/shared/desktop/youtube.svg" /></a>
       </div>
 
       </div>
 
       <div className="footerDiv2">
-          <Link to={"/"}>HOME</Link>
-          <Link to={"/stories"}>STORIES</Link>
-          <Link to={"/features"}>FEATURES</Link>
-          <Link to={"/pricing"}>PRICING</Link>
+          <Link className="footer-links" to={"/"}>HOME</Link>
+          <Link className="footer-links" to={"/stories"}>STORIES</Link>
+          <Link className="footer-links" to={"/features"}>FEATURES</Link>
+          <Link className="footer-links" to={"/pricing"}>PRICING</Link>
       </div>
 
       <div className="footerDiv3">
-        <Arrow jc="flex-end" h4="GET AN INVITE" />
+        <Arrow jc="center" h4="GET AN INVITE" />
+        <p>This website was made by <a className="madeBy" href="https://github.com/HenockAdane">HENOCK ADANE</a></p>
         <p>Copyright 2019. All Rights Reserved</p>
 
       </div>

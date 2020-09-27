@@ -1,5 +1,6 @@
 .arrowContainer{
     width: 90%;
+    max-width: 270px;
     padding: 10px 0;
     border-top-width: 1px;
     border-top-color: rgb(170, 170, 170);
