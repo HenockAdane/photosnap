@@ -293,7 +293,7 @@ function App() {
 
       <div className="footerDiv3">
         <Arrow jc="center" h4="GET AN INVITE" />
-        <p>This website was made by <a className="madeBy" href="https://github.com/HenockAdane">HENOCK ADANE</a></p>
+        <p>This website was made by <a className="madeBy" href="https://github.com/HenockAdane" target="_blank">HENOCK ADANE</a></p>
         <p>Copyright 2019. All Rights Reserved</p>
 
       </div>
