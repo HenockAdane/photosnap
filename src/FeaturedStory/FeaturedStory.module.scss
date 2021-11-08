@@ -1,0 +1,28 @@
+.FeaturedStory{
+    max-width: 100%;
+    min-height: 650px;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    color: white;
+    grid-column: 1/-1;
+}
+
+.featuredStoryText{
+    width: 387px;
+    min-height: 406px;
+    margin: 0 0 0 7.7%;
+}
+
+.featuredStory div h1{
+    margin: 8% 0 4% 0;
+}
+
+.date{
+    color: rgb(170, 170, 170);
+}
+
+.FeaturedStory div p{
+    margin: 8% 0;
+    color: rgb(170, 170, 170);
+}

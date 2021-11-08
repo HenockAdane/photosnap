@@ -1,0 +1,64 @@
+.Arrow{
+    width: 100%;
+    max-width: 270px;
+    padding: 10px 0;
+    border-top-width: 1px;
+    border-top-color: rgb(170, 170, 170);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition:  all 0.2s ease-in;
+    cursor: pointer;
+    border: 1px solid;
+    box-shadow: 5px 5px 2px rgb(255, 255, 255);
+
+    a, h4{
+        transition:  all 0.2s ease-in;
+    }
+
+    &:active{
+        box-shadow: unset;
+    }
+
+
+    &:hover{
+        // text-decoration: underline;
+        
+        a{
+            margin: 0 0 0 5px;
+        }
+        
+
+    }
+    
+     h4{
+        margin: 0 10px 0 0;
+    }
+}
+
+
+
+@media (max-width: 1100px) {
+
+    .Arrow{
+
+        &:hover{
+
+            a{
+                margin: unset;
+            }
+        }
+    }
+    
+    .arrowContainer:hover{
+        text-decoration: unset;
+    }
+
+    .arrowContainer{
+        width: 90%;
+    }
+
+    .arrowContainer h4{
+        margin:  0 5px 0 0;
+    }
+}
