@@ -15,7 +15,6 @@ function Header() {
         const eventFunction = (e)=> {
             const width = e.target.innerWidth
 
-            console.log(width)
     
             if (width > 900 && isPhoneNavOpen){
                 setIsPhoneNavOpen(false)
