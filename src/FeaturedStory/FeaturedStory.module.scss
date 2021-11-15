@@ -1,17 +1,19 @@
 .FeaturedStory{
-    max-width: 100%;
+    max-width: 100vw;
     min-height: 650px;
     background-size: cover;
     display: flex;
     align-items: center;
     color: white;
     grid-column: 1/-1;
+    padding: 0 0 0 7.7%;
+
 }
 
 .featuredStoryText{
     width: 387px;
+    max-width: 100%;
     min-height: 406px;
-    margin: 0 0 0 7.7%;
 }
 
 .featuredStory div h1{
@@ -25,4 +27,10 @@
 .FeaturedStory div p{
     margin: 8% 0;
     color: rgb(170, 170, 170);
+}
+
+@media (max-width: 768px) {
+    .FeaturedStory{
+        padding: 0 7.7%;
+    }
 }

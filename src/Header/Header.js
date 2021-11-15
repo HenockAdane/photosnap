@@ -15,9 +15,9 @@ function Header() {
         const eventFunction = (e)=> {
             const width = e.target.innerWidth
 
-            
+            console.log(width)
     
-            if (width > 1100 && isPhoneNavOpen){
+            if (width > 900 && isPhoneNavOpen){
                 setIsPhoneNavOpen(false)
                 gsap.to("body", {overflow: "unset"})
                 gsap.to(`.${styles.phoneNav}`, {width: "0%", display:"none", duration: "0"})

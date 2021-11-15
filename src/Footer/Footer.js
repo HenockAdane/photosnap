@@ -31,7 +31,7 @@ function Footer() {
     
             <div className={styles.footerDiv3}>
                 <Arrow jc="center" h4="GET AN INVITE" />
-                <p>This website was made by <a className={styles.madeBy} href="https://github.com/HenockAdane" target="_blank" rel="noopener noreferrer">HENOCK ADANE</a></p>
+                <p className={styles.madeBy}>This website was made by <a href="https://github.com/HenockAdane" target="_blank" rel="noopener noreferrer">HENOCK ADANE</a></p>
                 <p>Copyright {new Date().getFullYear()}. All Rights Reserved</p>
     
             </div>

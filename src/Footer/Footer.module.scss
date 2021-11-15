@@ -14,6 +14,14 @@
         font-size: 35px;
     }
 
+    p{
+        margin: 5% 0;
+
+        &:nth-child(odd){
+            margin: 0 0 5% 0;
+        }
+    }
+
     .footerlinks{
         text-decoration: none;
         display: inline-block;
@@ -44,16 +52,23 @@
     }
 
     .madeBy{
-        color: white;
+        text-align: center;
+        a{
+            color: white;
+        }
     }
 }
 
-@media (max-width: 1100px) {
+@media (max-width: 900px) {
 
     .Footer{
         flex-direction: column;
         justify-content: unset;
         padding: 0 2px;
+
+        .logo{
+            margin: 5% 0 0 0;
+        }
 
         .footerDiv1, .footerDiv2, .footerDiv3{
             align-items: center;
